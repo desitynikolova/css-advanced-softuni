@@ -1,0 +1,24 @@
+html{
+    font-size: var(--font-size, 18px);
+    line-height: var(--font-line-height, 1.5em);
+    font-family: var(--font-family-main, 'Verdana, sans-serif');
+}
+
+p, ul, ol{
+    padding-bottom: var(--layout-padding-b, 1.5em);
+}
+
+ul, ol{
+    padding-left: 2.5em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-headings, var(--font-family-main));
+}
+
+blockquote{
+    padding: 0 2.5em;
+    border-left: 2px solid black;
+    font-family: Georgia, serif;
+    margin-bottom: var(--layout-padding-b, 1.5em);
+}
