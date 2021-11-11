@@ -2,7 +2,7 @@ title: Css Advanced
 email: desi011@abv.bg
 description: Hello there!  
 destination: docs
-baseurl: ""
+baseurl: "/css-advanced-softuni"
 url: "" 
 twitter_username: desitynik
 github_username:  desitynikolova
@@ -12,14 +12,15 @@ plugins:
   - jekyll-feed
 
 
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - docs
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
