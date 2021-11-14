@@ -1,0 +1,34 @@
+{
+  "name": "su-css-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "child_process": "^1.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-exec": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desitynikolova/css-advanced-softuni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/desitynikolova/css-advanced-softuni/issues"
+  },
+  "homepage": "https://github.com/desitynikolova/css-advanced-softuni#readme"
+}

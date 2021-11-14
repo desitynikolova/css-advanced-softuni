@@ -1,6 +1,124 @@
-@import url('variables.css');
+:root {
+  --font-size: 23px;
+  --font-line-height: 1.5;
+  --font-family-main: Georgia, serif;
+  --font-family-headings: Palatino Linotype, serif;
+  --layout-width: 55em;
+  --layout-padding-b: 2em;
+}
 
-@import url('reset.css');
-@import url('typography.css');
-@import url('layout.css');
-@import url('navigation.css');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: var(--font-size, 18px);
+  line-height: var(--font-line-height, 1.5em);
+  font-family: var(--font-family-main, "Verdana, sans-serif");
+}
+
+p, ul, ol {
+  padding-bottom: var(--layout-padding-b, 1.5em);
+}
+
+ul, ol {
+  padding-left: 2.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings, var(--font-family-main));
+}
+
+blockquote {
+  padding: 0 2.5em;
+  border-left: 2px solid black;
+  font-family: Georgia, serif;
+  margin-bottom: var(--layout-padding-b, 1.5em);
+}
+
+.site {
+  padding-top: 3em;
+  max-width: var(--layout-width, 60em);
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  text-align: right;
+  padding-top: 0.5em;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  display: block;
+  margin: 0 0.7em;
+  transform: translate(0, -5em);
+  opacity: 0;
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+.loaded .nav ul li {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.nav ul li:nth-child(1) {
+  transition-delay: 0.4s;
+}
+.nav ul li:nth-child(2) {
+  transition-delay: 0.8s;
+}
+.nav ul li:nth-child(3) {
+  transition-delay: 1.2s;
+}
+.nav ul li:nth-child(4) {
+  transition-delay: 1.6s;
+}
+.nav ul li:nth-child(5) {
+  transition-delay: 2s;
+}
+.nav a {
+  display: flex;
+  padding: 0.5em 1em;
+  background: #eee;
+  color: #333;
+  text-decoration: none;
+}
+.nav a::before {
+  display: block;
+  margin-right: 0.5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+.nav .current-page a, .nav a:hover {
+  background-color: #090;
+  color: white;
+}
+
+.nav li.page-title-about a::before {
+  content: "\f2bb";
+}
+.nav li.page-title-contacts a::before {
+  content: "\f098";
+}
+
+.page-about {
+  background-color: red;
+}
+
+/*# sourceMappingURL=site.css.map */

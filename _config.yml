@@ -2,7 +2,8 @@ title: Css Advanced
 email: desi011@abv.bg
 description: Hello there!  
 destination: docs
-baseurl: "/css-advanced-softuni"
+baseurl: ""
+# baseurl: "/css-advanced-softuni"
 url: "" 
 twitter_username: desitynik
 github_username:  desitynikolova
