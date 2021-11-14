@@ -1,15 +1,20 @@
-body{
-    background-color: black;
+body {
+  background-color: red;
 }
 
-.site{
-    padding-top: 3em;
-    max-width: var(--layout-width, 60em);
-    margin: 0 auto;
+.site {
+  padding-top: 3em;
+  max-width: var(--layout-width, 60em);
+  margin: 0 auto;
 }
 
-.site-header{
+.site-header {
+  @include bp(mobile) {
+      
+  }
+  @include bp(desktop) {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 }
